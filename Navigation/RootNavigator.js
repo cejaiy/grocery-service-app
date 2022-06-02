@@ -1,13 +1,9 @@
 import * as React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import Constants from 'expo-constants';
-import Ionic from 'react-native-vector-icons/Ionicons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FaqScreen from '../screens/FaqScreen'
 
-import Tabs from "../Navigation/bottomTab"
+
 import Welcome from '../screens/welcome';
 import Login from '../screens/login';
 import SignUp from '../screens/signUp';
@@ -21,7 +17,8 @@ import AddressScreen from '../screens/address';
 import CardScreen from '../screens/addCard';
 import PaymentScreen from '../screens/payment';
 import HistoryScreen from '../screens/history';
-import CheckoutScreen from '../screens/checkoutScreen'
+import CheckoutScreen from '../screens/checkoutScreen';
+import AboutScreen from '../screens/aboutScreen';
 
 
  
@@ -48,6 +45,7 @@ export default function App() {
         <Stack.Screen name = "CardScreen" component = {CardScreen}/>
         <Stack.Screen name = "PaymentScreen" component = {PaymentScreen}/>
         <Stack.Screen name = "HistoryScreen" component = {HistoryScreen}/>
+        <Stack.Screen name = "AboutScreen" component = {AboutScreen}/>
         
       </Stack.Navigator>
     </NavigationContainer> 

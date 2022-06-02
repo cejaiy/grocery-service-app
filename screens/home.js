@@ -62,7 +62,7 @@ const TabButton = (currentTab, setCurrentTab, title, image) => {
       }else  if (title == "FAQ") {
         navigation.navigate("FaqScreen"); 
       }else  if (title == "About") {
-        navigation.navigate(""); 
+        navigation.navigate("AboutScreen"); 
       }
     }}>
       <View style={{
